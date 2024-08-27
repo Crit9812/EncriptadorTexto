@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptación de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <main class="partePrincipal">
+        <h1 class="titulo">Encriptador</h1>
+        <Section class="espacioPrincipal">
+            <div class="contenedor1">
+                <p class="titulos"><b>INGRESA EL TEXTO AQUI</b></p>
+                <textarea class="contenedorTexto" ></textarea>
+                <p class="nota"><img src="signoAdmi.png" alt="">Solo letras minúsculas y sin acentos</p>
+                <div class="botones">
+                    <button onclick= "Encriptar();" class="boton1">Encriptar</button>
+                    <button  onclick= "Desencriptar();" class="boton2">Desencriptar</button>
+                </div>
+                
+            </div>
+            <div class="contenedor2">
+                <p class="titulos"><b>RESULTADO</b></p>
+                <textarea id="resultado"  class="contenedorResultado"> </textarea>
+                <button id="copiarTex" class="boton1" onclick="copiar()">Copiar</button>
+                <img id="imagen" src="Muñeco.png" alt="Imagen" style="width: 100%; height: auto;">
+                <p id="mensajeAdv" class="titulos"><b>Ningun mensaje fue encontrado</b></p>
+                <p id="mensajeAdv2">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+        </Section>
+        
+            
+            
+    </main>
+    <footer class="encabezado">
+        <p>Desarrollado por Christopher</p>
+    </footer>
+    <script src="app.js" ></script>
+</body>
+</html>
