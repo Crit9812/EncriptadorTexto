@@ -34,10 +34,11 @@
     display: flex;
     background-color: #edeef35e;
     border-radius: 2%;
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     height: 65vh;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 15%;
 }
 
 .contenedor1 {
@@ -75,8 +76,8 @@
 .contenedorResultado {
     border-radius: 2%;
     background-color: #ffffff;
-    width: 40%;
-    height: 70vh;
+    width: 180%;
+    height: 100%;
     color: rgb(0, 0, 0);
     font-size: 1rem;
     padding: 2%;
@@ -133,9 +134,93 @@
 }
 
 #imagen {
+    width: 200%;
     display: block;
 }
 
 #copiarTex {
     display: none;
+}
+
+@media (max-width:1024px){
+    #imagen {
+        width: 50%;
+        display: none;
+    }
+    .espacioPrincipal{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .contenedor1 {
+        gap: 5px;
+    }
+    .contenedorTexto {
+        width: 100%;
+        height: 500px;
+        
+    }
+    .contenedorResultado {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width:412px){
+    #imagen {
+        width: 50%;
+        display: none;
+    }
+    .espacioPrincipal{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .contenedor1 {
+        gap: 5px;
+    }
+    .contenedorTexto {
+        width: 100%;
+        height: 300px;
+        
+    }
+    .contenedorResultado {
+        width: 100%;
+        height: 100%;
+        font-size: 1rem;
+    }
+    .titulos {
+        font-size: 1rem;
+    }
+    
+    .titulo {
+        border-radius: 1%;
+        padding: 0.5%;
+        width: 60%;
+        background-color: white;
+        text-align: center;
+        font-size: 2rem;
+        color: black;
+    }
+    .nota {
+        width: 100%;
+        border-radius: 1%;
+        text-align: center;
+        background-color: #ffffff;
+        font-size: 1rem;
+        color: black;
+    }
+    .boton1 {
+        border-radius: 1%;
+        border-color: #ffffff;
+        background-color: black;
+        color: #ffffff;
+        width: 50%;
+        height: 3vh;
+    }
+    
+    .boton2 {
+        border-radius: 1%;
+        border-color: #000000;
+        width: 50%;
+        height: 3vh;
+    }
 }
